@@ -1,0 +1,55 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+
+canvas {
+    box-shadow: 10px 10px 30px black;
+}
+
+.game-over-message {
+    background-color: rgba(255, 255, 255, .5);
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 49px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-over-message.show {
+    display: flex;
+}
+
+.game-over-message button {
+    background-color: #333;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.game-over-message button:hover {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+.game-over-message h1 {
+    color: #222;
+}
